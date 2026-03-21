@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">YouTube</div>
+      <input id="searchInput" class="search" placeholder="Search" />
+      <div id="authPanel" class="auth-panel"></div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <button class="nav-btn active">Home</button>
+        <button class="nav-btn" data-filter="saved">Saved</button>
+        <button class="nav-btn" data-filter="liked">Liked</button>
+        <button class="nav-btn" data-filter="subscriptions">Subscriptions</button>
+      </aside>
+
+      <main>
+        <section id="hero" class="hero"></section>
+        <section id="videoGrid" class="video-grid"></section>
+      </main>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
